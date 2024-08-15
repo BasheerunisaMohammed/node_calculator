@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     // Run unit tests
-                    sh 'npm run unit-test'
+                    sh 'npm run test:unit'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     // Run integration tests
-                    sh 'npm run integration-test'
+                    sh 'npm run test:integration'
                 }
             }
         }
